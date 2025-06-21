@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GridViewPage extends StatelessWidget {
-  final List<String> menuTitles = ['Profile', 'List View', 'Blank Page'];
-  final List<IconData> menuIcons = [Icons.person, Icons.shopping_bag, Icons.ramen_dining];
+  final List<String> menuTitles = ['Profile', 'List View', 'Form Page', 'Blank Page'];
+  final List<IconData> menuIcons = [Icons.person, Icons.shopping_bag, Icons.input, Icons.ramen_dining];
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class GridViewPage extends StatelessWidget {
       ),
       body: GridView.count(
         crossAxisCount: 2,
-        children: List.generate(3, (index) {
+        children: List.generate(4, (index) {
             return InkWell(
               onTap: () {
                 Navigator.pushNamed(context, '/${index+1}');

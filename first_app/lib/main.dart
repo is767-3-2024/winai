@@ -1,6 +1,7 @@
 import 'package:first_app/pages/00_home_page.dart';
 import 'package:first_app/pages/01_profile_page.dart';
 import 'package:first_app/pages/02_list_view_page.dart';
+import 'package:first_app/pages/03_form_page.dart';
 import 'package:first_app/pages/99_blank_page.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         '/0': (context) => GridViewPage(),
         '/1': (context) => MyHomePage(title: 'Home'),
         '/2': (context) => ListViewPage(),
-        '/3': (context) => BlankPage(),
+        '/3': (context) => FormPage(),
+        '/4': (context) => BlankPage(),
       },
     );
   }
